@@ -1,0 +1,114 @@
+/*
+Theme Name:   Twenty Twenty One Child Theme
+Description:  A Twenty Twenty-One child theme 
+Template:     twentytwentyone
+Version:      1.0.0
+*/
+
+/* Algemene CSS */
+article .entry-title {
+    font-size: 2rem;
+}
+
+.content-area {
+    background-color: #f3f3f3;
+}
+
+/*Header CSS*/
+.site-header {
+    flex-wrap: nowrap;
+    padding: 0 ;
+}
+
+.site-header > .site-logo {
+    border-bottom: none;
+    width: auto;
+}
+
+/*Menu CSS*/
+.primary-navigation a:visited ,
+.primary-navigation a:link {
+    color: #66522B;
+}
+
+.primary-navigation .current-menu-item a,
+.primary-navigation a:hover,
+.primary-navigation a:visited {
+    text-decoration: none!important;
+    text-decoration-style: none!important;
+}
+
+.primary-navigation .current-menu-item a,
+.primary-navigation a:hover {
+    color:rgb(255, 255, 255);
+    background:#66522B!important;
+}
+
+/* CSS voor home */
+.home .content-area {
+    background-color: #fff;
+}
+
+.home .site-main {
+    max-width: var(--responsive--alignwide-width);
+    margin: auto;
+}
+
+.home .site-main article {
+    margin-top: 0;
+    padding: 1rem;
+}
+
+.home .post-thumbnail .wp-post-image {
+    margin-top: 0;
+}
+
+.home .site-main > article > .entry-footer {
+    display: none;
+}
+
+/* Mobile first */
+@media (min-width: 756px) {
+    .home .site-main {
+        display: flex;
+    }
+    .home .site-main article {
+        width: 33%;
+    }  
+}
+
+/* CSS voor gewone pagina */
+.page .entry-header {
+    margin-bottom: 0;
+    border-bottom: none;
+    padding-bottom: 0;
+}
+
+.page .entry-title {
+    font-size: 2rem;
+}
+
+.page .entry-content p {
+    max-width: var(--responsive--alignwide-width)!important;
+}
+
+/* Footer CSS */
+.site-footer {
+    display: none;
+}
+
+/* Footer widget CSS */
+.widget-area {
+    display: block;
+    background-color: #333;
+    color: #CCC;
+    max-width: 100%;
+    margin-top: 0;
+}
+
+.widget-area .widget {
+    max-width: var(--responsive--alignwide-width);
+    margin-top: 0;
+    margin-left: auto;
+    margin-right: auto;
+}
